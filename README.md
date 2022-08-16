@@ -5,4 +5,4 @@ This contains basics of Java as well as main object-oriented concepts related to
 ## To view the file
         folder -> src -> folder -> .java file
 	
-![Java logo](https://favpng.com/png_view/java-programming-language-programmer-computer-programming-logo-png/uZuSKr9z)
+![Java logo](https://brandlogos.net/wp-content/uploads/2013/03/java-eps-vector-logo.png)
