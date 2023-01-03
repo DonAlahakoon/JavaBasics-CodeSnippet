@@ -1,4 +1,7 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
 package java_basics02;
 
 import java.util.ArrayList;
@@ -7,20 +10,19 @@ import java.util.Scanner;
 
 public class Java_Basics02 {
 
-
+    
     public static void main(String[] args) {
-       
-        //User Input
         
+        //USER INPUT
         Scanner in = new Scanner(System.in);
         System.out.println("Enter your name:");
+        //Taking user input string value
         String input = in.nextLine();  //.nextDouble(),.nextInt();
         System.out.println("Hello "+input);
-        System.out.println(in.hasNextLine());//.hasNextInt();//checks whether there is a input if so return true
+        System.out.println(in.hasNextLine());//checks whether there is an input if so return true
         System.out.println("\n\n");
 
         //Arrays
-        
         int luckyNumbers[] = {1,5,8,12,53,35};
         System.out.println(luckyNumbers[0]);
         System.out.println(luckyNumbers.length);
@@ -41,9 +43,9 @@ public class Java_Basics02 {
         friends.add("Kevin");
         
         friends.remove("Oscar");
-        System.out.println(friends.toString());
+        System.out.println(friends.toString());//print array
         System.out.println(friends.get(0));
-        System.out.println(friends.contains("Oscar"));
+        System.out.println(friends.contains("Oscar"));//return true or false
         System.out.println(friends.size());
         System.out.println("\n\n");
         
@@ -70,7 +72,7 @@ public class Java_Basics02 {
             System.out.println("Number comparison was true");
         }
         if('a'<'b'){
-            System.out.println("Charater comaparison was true");
+            System.out.println("Character comaparison was true");
         }
         if("dog".equals("dog")){
             System.out.println("String comparison was true");
@@ -95,8 +97,8 @@ public class Java_Basics02 {
         
         do{
             System.out.println(index);
-             index++;
-          }while(index<=5);System.out.println("\n\n");
+             index--;
+          }while(index>0);System.out.println("\n\n");
 
         //For loop
         for(int i=0;i<5;i++){
@@ -115,7 +117,5 @@ public class Java_Basics02 {
     public static int addNumbers(int num1,int num2){
         return num1+num2;
     }
-    
-    
     
 }

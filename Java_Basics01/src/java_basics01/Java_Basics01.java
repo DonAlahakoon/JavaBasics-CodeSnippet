@@ -1,12 +1,16 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
 package java_basics01;
+
 
 public class Java_Basics01 {
 
-
+    
     public static void main(String[] args) {
-      
-        //Variable types
+        
+        //VARIABLE TYPES
         String name = "Mike";
         char testGrade = 'A';
 
@@ -20,9 +24,9 @@ public class Java_Basics01 {
 
         boolean isTall = true;
         
-        //printing
+        //PRINTING
         System.out.println("Your name is " +name);
-        System.out.printf("Your name is %s \n",name+"\n");
+        System.out.printf("Your name is %s \n",name+"\n");//format specifiers can also use similar to "C" language
         
         /*
         %f -> double or float
@@ -32,7 +36,7 @@ public class Java_Basics01 {
         %b -> boolean
         */
         
-      //Casting and Converting
+      //CASTING AND CONVERTING
         System.out.println("(int)3.14");
         System.out.println((double)3+"\n");
         
@@ -41,9 +45,10 @@ public class Java_Basics01 {
         
         System.out.println(100 + intFromString);
         System.out.println(100 + doubleFromString);
+        System.out.println("\n\n");
         
         
-        //String methods
+        //STRING METHODS
         String greeting = "Hello";
         
         System.out.println(greeting.length());
@@ -53,7 +58,7 @@ public class Java_Basics01 {
         System.out.println(greeting.substring(2));
         System.out.println(greeting.substring(1,3)+"\n\n");
         
-        //Numbers
+        //NUMBERS
         System.out.println(2*3);
         System.out.println(10%3);
         System.out.println(1+2*3);
@@ -67,10 +72,11 @@ public class Java_Basics01 {
         System.out.println(num);
         
         
-        //Math class has useful math methods
-        System.out.println(Math.pow(2, 4));
+        //MATH CLASS HAS USEFUL MATH METHODS
+        System.out.println(Math.pow(2,4));
         System.out.println(Math.sqrt(25));
         System.out.println(Math.round(2.7));
+   
     }
     
 }
