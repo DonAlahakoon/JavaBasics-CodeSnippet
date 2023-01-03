@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package java_basics02;
 
 import java.util.ArrayList;
@@ -17,26 +13,25 @@ public class Java_Basics02 {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter your name:");
         //Taking user input string value
-        String input = in.nextLine();  //.nextDouble(),.nextInt();
+        String input = in.nextLine();  //.nextDouble(),.nextInt() for double and integer inputs;
         System.out.println("Hello "+input);
         System.out.println(in.hasNextLine());//checks whether there is an input if so return true
         System.out.println("\n\n");
 
-        //Arrays
+        //ARRAYS
         int luckyNumbers[] = {1,5,8,12,53,35};
         System.out.println(luckyNumbers[0]);
         System.out.println(luckyNumbers.length);
         System.out.println("\n\n");
         
-       //N dimesional arrays
+       //N DIMENSIONAL ARRAYS
         int numberGrid[][]  = {{1,3},{3,4}};
         numberGrid[0][1] = 99;
         System.out.println(numberGrid[0][0]);
         System.out.println(numberGrid[0][1]);
         System.out.println("\n\n");
         
-        //ArrayList
-        
+        //ARRAYLIST
         ArrayList<String> friends = new ArrayList<String>();
         friends.add("Oscar");
         friends.add("Angela");
@@ -49,12 +44,11 @@ public class Java_Basics02 {
         System.out.println(friends.size());
         System.out.println("\n\n");
         
-        //Methods
-        
+        //METHODS
         int sum = addNumbers(4,60);  // addNumbers method is at the end of the code
         System.out.println(sum);
         
-        //IF statements 
+        //IF STATEMENTS 
         boolean isStudent = false;
         boolean isSmart  = false;
         
@@ -79,7 +73,7 @@ public class Java_Basics02 {
             System.out.println("\n\n");
         }
         
-        //Switch statement
+        //SWITCH 
         char myGrade = 'F';
         switch(myGrade){
             case 'A':System.out.println("You passed.");break;
@@ -88,7 +82,7 @@ public class Java_Basics02 {
             default:System.out.println("Invalid grade");
         }
         
-        //while loops
+        //WHILE LOOPS
         int index = 1;
         while(index <=5){
             System.out.println(index);
@@ -100,7 +94,7 @@ public class Java_Basics02 {
              index--;
           }while(index>0);System.out.println("\n\n");
 
-        //For loop
+        //FOR LOOP
         for(int i=0;i<5;i++){
             System.out.println(i);
         }
@@ -113,7 +107,7 @@ public class Java_Basics02 {
         
         
     }
-    //static method (which is belong to class rather than the object
+    //STATIC METHOD (which is belong to class rather than the object
     public static int addNumbers(int num1,int num2){
         return num1+num2;
     }

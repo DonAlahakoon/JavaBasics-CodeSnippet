@@ -35,7 +35,7 @@ public class Java_Basics03 {
         
         
 //Abstraction
-//        related to Vehicle.java
+        //related to Vehicle.java
 
         Bicycle b=new Bicycle();
         b.move();//calling abstract method(which is overriden in bicycle class)

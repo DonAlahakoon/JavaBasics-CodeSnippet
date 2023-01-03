@@ -14,14 +14,14 @@ public abstract class Vehicle {
 }
 class Bicycle extends Vehicle{
     
-    @override
+    @Override
     public void move(){
         System.out.println("The bicycle pedals forward.");
     }
 }
 class Plane extends Vehicle{
 
-    @override
+    @Override
     public void move(){
         System.out.println("The fly through the sky.");
     }

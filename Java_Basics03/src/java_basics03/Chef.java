@@ -2,6 +2,9 @@
 package java_basics03;
 
 //Inheritance
+//java doesn't support multiple inheritance, but support multi level inheritance
+//Multiple inheritance can be achieved using interfaces
+
 class Chef {
     
     String name;
@@ -34,6 +37,6 @@ class ItalianChef extends Chef{
     }
     @Override
     public void makeSpecialDish(){
-        System.out.println("The chef makes chicken parm");
+        System.out.println("The Italian chef makes special dish");
     }
 }
