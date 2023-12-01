@@ -9,9 +9,11 @@ public class Java_Basics02 {
     
     public static void main(String[] args) {
         
-        //USER INPUT
+        //USER INPUT (how to take an user input in Java)
         Scanner in = new Scanner(System.in);
         System.out.println("Enter your name:");
+        
+        
         //Taking user input string value
         String input = in.nextLine();  //.nextDouble(),.nextInt() for double and integer inputs;
         System.out.println("Hello "+input);

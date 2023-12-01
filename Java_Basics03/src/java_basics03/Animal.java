@@ -5,8 +5,10 @@ package java_basics03;
 //Interface can exetends another interface.
 //A class can extends only one class but can implement several interfaces.
 
+//This is Abstraction..
+
 public interface Animal {
-    public void speak();
+    public void speak();// this is an abstract method but doesn't declare as abstract
 }
 
 class Car implements Animal{

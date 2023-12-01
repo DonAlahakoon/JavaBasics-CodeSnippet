@@ -73,9 +73,9 @@ public class Java_Basics01 {
         
         
         //MATH CLASS HAS USEFUL MATH METHODS
-        System.out.println(Math.pow(2,4));
-        System.out.println(Math.sqrt(25));
-        System.out.println(Math.round(2.7));
+        System.out.println(Math.pow(2,4));//power
+        System.out.println(Math.sqrt(25));//square root
+        System.out.println(Math.round(2.7));//round off
    
     }
     
