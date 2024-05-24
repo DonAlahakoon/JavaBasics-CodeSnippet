@@ -50,7 +50,7 @@ public class Java_Basics03 {
 //Interface inheritance
         Animal[] animal={
             new Dog(),
-            new Car()
+            new Cat()
         };
         
         animal[0].speak();

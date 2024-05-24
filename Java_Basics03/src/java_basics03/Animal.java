@@ -11,7 +11,7 @@ public interface Animal {
     public void speak();// this is an abstract method but doesn't declare as abstract
 }
 
-class Car implements Animal{
+class Cat implements Animal{
     @Override
     public void speak(){
         System.out.println("Meow meow");

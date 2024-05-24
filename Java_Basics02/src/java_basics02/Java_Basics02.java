@@ -10,7 +10,7 @@ public class Java_Basics02 {
     public static void main(String[] args) {
         
         //USER INPUT (how to take an user input in Java)
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);//first need to create a Scanner object
         System.out.println("Enter your name:");
         
         
@@ -21,6 +21,7 @@ public class Java_Basics02 {
         System.out.println("\n\n");
 
         //ARRAYS
+        // int luckyNumbers[] = new int[10];
         int luckyNumbers[] = {1,5,8,12,53,35};
         System.out.println(luckyNumbers[0]);
         System.out.println(luckyNumbers.length);
