@@ -1,6 +1,8 @@
 package java_basics02;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.HashMap;
 import java.util.Scanner;
 
 
@@ -36,7 +38,7 @@ public class Java_Basics02 {
         
 
 
-    // Java Data Structures
+    // Java Advanced Data Structures
 
         // 1.ARRAYLIST (A resizable array which can grow as needed)
         ArrayList<String> friends = new ArrayList<String>();
@@ -58,7 +60,19 @@ public class Java_Basics02 {
         cars.add("Ford");
         cars.add("BMW");  // Duplicate
         cars.add("Mazda");
-        System.out.println(cars); // output only unique elements
+        System.out.println(cars); // print hashset only unique elements
+
+        // 3.HashMap
+        // Create a HashMap object called capitalCities
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+        // Add keys and values (Country, City)
+        capitalCities.put("England", "London");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("USA", "Washington DC");
+        System.out.println(capitalCities);
+
         
         //METHODS
         int sum = addNumbers(4,60);  // addNumbers method is at the end of the code
