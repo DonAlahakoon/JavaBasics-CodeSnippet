@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.Iterator;
 
 
 public class Java_Basics02 {
@@ -62,9 +63,15 @@ public class Java_Basics02 {
         cars.add("Mazda");
         System.out.println(cars); // print hashset only unique elements
 
-        // 3.HashMap
+        // 3.HashMap (Stores key value pairs ex. name and id)
         // Create a HashMap object called capitalCities
         HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+    //Iterator (An iterator is a way to loop through elements in the data structure)
+        Iterator<String> itr = cars.iterator(); //create an iterator for the arraylist
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
 
         // Add keys and values (Country, City)
         capitalCities.put("England", "London");
