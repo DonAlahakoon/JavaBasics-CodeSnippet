@@ -10,20 +10,20 @@ public class Java_Basics03 {
         //Exception handling =>   See and  run the Exception1
         
 //Basic OOP concepts
-        // 1. Encapsulation (Please refer Book.java file)
+    // 1. Encapsulation (Please refer Book.java file)
         
         //Creating a book object
         Book book1 = new Book("Lord of the rings","JRR Tolkein",1954);
         System.out.println(book1.title); //since varibles are public can access directly (not a good practice)
         book1.readBook(); // reading a public method
         
-        //using getter and setter to set and get title
+        //using getter and setter to access private variable
         book1.setYear(1955);
         System.out.println(book1.getYear()+"\n\n");
         
         
-//Inheritance
-        //related to Chef.java
+    // 2. Inheritance (Please refer Chef.java)
+        
         Chef myChef = new Chef("Gordan Ramsay",54);
         myChef.makeChicken();
         myChef.makeSpecialDish();
@@ -35,8 +35,7 @@ public class Java_Basics03 {
         System.out.println("\n\n");
         
         
-//Abstraction
-        //related to Vehicle.java
+    // 3. Abstraction (Please refer the vehicle class)
 
         Bicycle b=new Bicycle();
         b.move();//calling abstract method(which is overriden in bicycle class)
@@ -48,18 +47,32 @@ public class Java_Basics03 {
         System.out.println("\n\n");
         
         
-//Interface inheritance
+    // 4. Polymorphism using Interface inheritance (Please refer to interface animal)
         Animal[] animal={
             new Dog(),
             new Cat()
         };
         
+        //below example for polymorphism where a single method having many forms
         animal[0].speak();
         animal[1].speak();
         // or a extended for loop can be use
         for(Animal a:animal){
             a.speak();
         }
+        
+    // 5. Polymorphism another example
+        Shape c = new Circle(7);
+        Shape r = new Quadrilaterals(3,4);
+        
+        
+        Quadrilaterals s = new Quadrilaterals(5);
+        
+        System.out.println(c.area());
+        System.out.println(r.area());
+        System.out.println(s.areaSquare());
+        
+        
     }
     
 }

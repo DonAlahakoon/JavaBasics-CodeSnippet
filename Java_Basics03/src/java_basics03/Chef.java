@@ -2,13 +2,15 @@
 package java_basics03;
 
 //Inheritance
-//java doesn't support multiple inheritance, but support multi level inheritance
+
+//Java doesn't support multiple inheritance, only single inheritance(which means a subclass can only have 1 parent class)
+//but Java support multi level inheritance
 //Multiple inheritance can be achieved using interfaces
 
 class Chef {
     
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     Chef(String name, int age) {//constructor
         this.name = name;
@@ -25,7 +27,7 @@ class Chef {
     
 }
 
-class ItalianChef extends Chef{
+class ItalianChef extends Chef{ // This is inheritance
     public String ctryOfOrigin;
     
     ItalianChef(String name,int age,String ctryOfOrigin){
