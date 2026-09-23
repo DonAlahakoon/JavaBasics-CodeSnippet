@@ -34,7 +34,11 @@ public class Java_Basics02 {
         System.out.println(numberGrid[0][1]);
         System.out.println("\n\n");
         
-        //ARRAYLIST
+
+
+    // Java Data Structures
+
+        // 1.ARRAYLIST (A resizable array which can grow as needed)
         ArrayList<String> friends = new ArrayList<String>();
         friends.add("Oscar");
         friends.add("Angela");
