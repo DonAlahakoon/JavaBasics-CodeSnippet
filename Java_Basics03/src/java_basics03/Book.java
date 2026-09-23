@@ -6,6 +6,7 @@ class Book {
     
     public String title;
     public String author;
+    private int year; //Variable made private for Encapsulation
     public static String staticAttribute = "My static attribute";// Static attributes belongs to class rather to object
     
     public void readBook(){
@@ -16,16 +17,17 @@ class Book {
     }
     
     //constructor 
-    Book(String title,String author){
+    Book(String title,String author,this.year){
         this.title = title;
         this.author = author;
+        this.year  = year;
     }
     
     //getters and setters
-    public void setTitle(String title){
-        this.title = title;
+    public void setYear(int year){
+        this.year = year;
     }
-    public String getTitle(){
-        return this.title;
+    public int getYear(){
+        return this.year;
     }
 }

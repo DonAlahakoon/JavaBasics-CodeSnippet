@@ -10,15 +10,16 @@ public class Java_Basics03 {
         //Exception handling =>   See and  run the Exception1
         
 //Basic OOP concepts
-        // refer Book.java file
+        // 1. Encapsulation (Please refer Book.java file)
         
-        Book book1 = new Book("Lord of the rings","JRR Tolkein");//creating an object
-        System.out.println(book1.title);
-        book1.readBook();
+        //Creating a book object
+        Book book1 = new Book("Lord of the rings","JRR Tolkein",1954);
+        System.out.println(book1.title); //since varibles are public can access directly (not a good practice)
+        book1.readBook(); // reading a public method
         
         //using getter and setter to set and get title
-        book1.setTitle("Harry Potter");
-        System.out.println(book1.getTitle()+"\n\n");
+        book1.setYear(1955);
+        System.out.println(book1.getYear()+"\n\n");
         
         
 //Inheritance
