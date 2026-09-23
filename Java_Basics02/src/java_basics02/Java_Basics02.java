@@ -9,7 +9,7 @@ public class Java_Basics02 {
     
     public static void main(String[] args) {
         
-        //USER INPUT (how to take an user input in Java)
+    //USER INPUT (how to take an user input in Java)
         Scanner in = new Scanner(System.in);//first need to create a Scanner object
         System.out.println("Enter your name:");
         
@@ -20,14 +20,14 @@ public class Java_Basics02 {
         System.out.println(in.hasNextLine());//checks whether there is an input if so return true
         System.out.println("\n\n");
 
-        //ARRAYS
+    //ARRAYS
         // int luckyNumbers[] = new int[10];
         int luckyNumbers[] = {1,5,8,12,53,35};
         System.out.println(luckyNumbers[0]);
         System.out.println(luckyNumbers.length);
         System.out.println("\n\n");
         
-       //N DIMENSIONAL ARRAYS
+    //N DIMENSIONAL ARRAYS
         int numberGrid[][]  = {{1,3},{3,4}};
         numberGrid[0][1] = 99;
         System.out.println(numberGrid[0][0]);
@@ -50,6 +50,15 @@ public class Java_Basics02 {
         System.out.println(friends.contains("Oscar"));//return true or false
         System.out.println(friends.size());
         System.out.println("\n\n");
+
+        // 2.HashSet (A resizable array which doesnt' allow duplicate elements)
+        HashSet<Sting> cars = new HashSet<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        cars.add("BMW");  // Duplicate
+        cars.add("Mazda");
+        System.out.println(cars); // output only unique elements
         
         //METHODS
         int sum = addNumbers(4,60);  // addNumbers method is at the end of the code
