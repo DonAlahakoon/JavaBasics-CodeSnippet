@@ -81,11 +81,11 @@ public class Java_Basics02 {
         System.out.println(capitalCities);
 
         
-        //METHODS
+    //METHODS
         int sum = addNumbers(4,60);  // addNumbers method is at the end of the code
         System.out.println(sum);
         
-        //IF STATEMENTS 
+    //IF STATEMENTS 
         boolean isStudent = false;
         boolean isSmart  = false;
         
@@ -96,7 +96,7 @@ public class Java_Basics02 {
             System.out.println("You are studetn not smart");
         }
         else{
-            System.out.println("You are not a student nor smart");
+            System.out.println("You are neither a student nor smart");
         }
         
         if(1<3){
@@ -110,7 +110,7 @@ public class Java_Basics02 {
             System.out.println("\n\n");
         }
         
-        //SWITCH 
+    //SWITCH 
         char myGrade = 'F';
         switch(myGrade){
             case 'A':System.out.println("You passed.");break;
@@ -119,7 +119,7 @@ public class Java_Basics02 {
             default:System.out.println("Invalid grade");
         }
         
-        //WHILE LOOPS
+    //WHILE LOOPS
         int index = 1;
         while(index <=5){
             System.out.println(index);
@@ -144,6 +144,7 @@ public class Java_Basics02 {
         
         
     }
+    
     //STATIC METHOD (which is belong to class rather than the object
     public static int addNumbers(int num1,int num2){
         return num1+num2;
