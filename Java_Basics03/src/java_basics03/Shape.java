@@ -15,14 +15,13 @@ public abstract class Shape {
     
    public abstract double area();
    
-   public void description(){ //non abstract method
+   public void description(){ //non-abstract method
        System.out.println("This is also a shape");
    }
     
 }
 
- class Circle extends Shape {
-     
+class Circle extends Shape {
      
      protected static final double pi = 3.1415926;
      
@@ -32,30 +31,48 @@ public abstract class Shape {
      
      @Override
      public double area(){
-         double area = 2*pi*radius;
-         return area;
+         return pi*radius*radius;
      }
 }
 
-class Quadrilaterals extends Shape {
-    
-    // Constructor overloading
-    public Quadrilaterals (double l){
-        this.length = l;
+// This is an example of multi-level inheritance
+// where the class Quadrilaterals is a child class of Shape and the classes Square and Rectangle are child classes of Quadrilaterals
+abstract class Quadrilaterals extends Shape {
+
+    public abstract String quadrilateralType();
+}
+
+class Square extends Quadrilaterals{
+
+    public Square(double l){
+        super.length = l;
     }
 
-    public Quadrilaterals (double l,double b){
-        this.length = l;
-        this.breadth = b;
-    }
     @Override
-    public double area() {
-        return this.length*this.breadth;
-    }
-    
-    public double areaSquare(){
+    public double area(){
         return this.length*this.length;
     }
-    
-    
+
+    @Override
+    public String quadrilateralType(){
+        return "Square";
+    }
+}
+
+class Rectangle extends Quadrilaterals{
+
+    public Rectangle(double l,double b){
+        super.length = l;
+        super.breadth = b;
+    }
+
+    @Override
+    public double area(){
+        return this.length*this.breadth;
+    }
+
+    @Override
+    public String quadrilateralType() {
+        return "Rectangle";
+    }
 }

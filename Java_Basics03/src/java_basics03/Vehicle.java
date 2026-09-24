@@ -3,7 +3,7 @@ package java_basics03;
 
 // An abstract class cannot be instantiated(can't use to create objects) in any case.
 // An abstract class contain both abstract and non-abstract methods
-// The class which extends an abstract class should override all abstract methods
+// The class which extends an abstract class should override all abstract methods otherwise it should also be declared as an abstract class
 // Any class with one or more abstract methods need declare itself as abstract
 
 public abstract class Vehicle {
@@ -26,5 +26,9 @@ class Plane extends Vehicle{
     @Override
     public void move(){
         System.out.println("The plane fly through the sky.");
+    }
+    
+    public void vehicleType(){
+        System.out.println("Not a domestic vehicle");
     }
 }

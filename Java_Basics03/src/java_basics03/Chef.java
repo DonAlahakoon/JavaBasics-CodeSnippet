@@ -7,30 +7,31 @@ package java_basics03;
 //but Java support multi level inheritance
 //Multiple inheritance can be achieved using interfaces
 
-class Chef {
+public class Chef {
     
     private String name;
     private int age;
 
-    Chef(String name, int age) {//constructor
+    public Chef(String name, int age) {//constructor
         this.name = name;
         this.age = age;
     }
 
-    void makeChicken() {
+    public void makeChicken() {
         System.out.println("The chef makes chicken");
     }
 
-    void makeSpecialDish() {
+    public void makeSpecialDish() {
         System.out.println("The chef makes special dish");
     }
     
 }
-
+// NB: In here we are not using 'public' access modifier because a single file can only have one public class
 class ItalianChef extends Chef{ // This is inheritance
+    
     public String ctryOfOrigin;
     
-    ItalianChef(String name,int age,String ctryOfOrigin){
+    public ItalianChef(String name,int age,String ctryOfOrigin){
         super(name,age);
         this.ctryOfOrigin = ctryOfOrigin;
     }
