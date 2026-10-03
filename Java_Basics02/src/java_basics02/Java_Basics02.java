@@ -55,7 +55,7 @@ public class Java_Basics02 {
         System.out.println("\n\n");
 
         // 2.HashSet (A resizable array which doesnt' allow duplicate elements)
-        HashSet<Sting> cars = new HashSet<String>();
+        HashSet<String> cars = new HashSet<String>();
         cars.add("Volvo");
         cars.add("BMW");
         cars.add("Ford");
