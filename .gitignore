@@ -6,3 +6,85 @@
 /Java_Basics03/nbproject/private/
 /Java_Basics03/build/
 /File_IO/nbproject/private/
+# =========================================================================
+# Java Projects Standard Gitignore
+# =========================================================================
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://java.com
+hs_err_pid*
+replay_pid*
+
+# =========================================================================
+# NetBeans Specifics
+# =========================================================================
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+build/
+
+# =========================================================================
+# Build Tools (Maven & Gradle)
+# =========================================================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+.gradle
+/build/
+
+# =========================================================================
+# Other Popular IDEs (IntelliJ & Eclipse)
+# =========================================================================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+.metadata
+.classpath
+.project
+.settings/
+*.launch
+
+# =========================================================================
+# Operating System Files
+# =========================================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride

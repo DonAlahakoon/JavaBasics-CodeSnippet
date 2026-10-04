@@ -20,7 +20,18 @@ public class Java_Basics02 {
         //Taking user input string value
         String input = in.nextLine();  //.nextDouble(),.nextInt() for double and integer inputs;
         System.out.println("Hello "+input);
-        System.out.println(in.hasNextLine());//checks whether there is an input if so return true //use with While loops
+        
+        //Taking a recurrent input
+        System.out.println("Enter a message(Press Enter to stop):");
+        while(in.hasNextLine()){ //this checks whether there's an input if so continue the loop. NB: Mostly used in file read. i.e. "Scanner in = new Scanner(file);"
+            String text = in.nextLine();
+            if(text.isEmpty()){
+                System.out.println("End of message.");
+                break;
+            }
+            System.out.println("You entered:"+text);
+        }
+        in.close();
         System.out.println("\n\n");
 
     //ARRAYS
@@ -41,6 +52,8 @@ public class Java_Basics02 {
 
     // Java Advanced Data Structures
 
+        System.out.println("Advanced Java Data Structures");
+        
         // 1.ARRAYLIST (A resizable array which can grow as needed)
         ArrayList<String> friends = new ArrayList<String>();
         friends.add("Oscar");
@@ -61,25 +74,31 @@ public class Java_Basics02 {
         cars.add("Ford");
         cars.add("BMW");  // Duplicate
         cars.add("Mazda");
-        System.out.println(cars); // print hashset only unique elements
+        System.out.println(cars); // printing hashset
+        System.out.println("\n\n");
 
         // 3.HashMap (Stores key value pairs ex. name and id)
         // Create a HashMap object called capitalCities
         HashMap<String, String> capitalCities = new HashMap<String, String>();
-
-    //Iterator (An iterator is a way to loop through elements in the data structure)
-        Iterator<String> itr = cars.iterator(); //create an iterator for the arraylist
-        while(itr.hasNext()){
-            System.out.println(itr.next());
-        }
+        
 
         // Add keys and values (Country, City)
         capitalCities.put("England", "London");
         capitalCities.put("Germany", "Berlin");
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
+        System.out.println("Printing Capital Citities");
         System.out.println(capitalCities);
+        System.out.println("\n\n");
 
+        
+        //Iterator (An iterator is a way to loop through elements in the data structure)
+        Iterator<String> itr = friends.iterator(); // An iterator for the arraylist
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+        System.out.println("\n\n");
+        
         
     //METHODS
         int sum = addNumbers(4,60);  // addNumbers method is at the end of the code
