@@ -20,7 +20,7 @@ public class Java_Basics02 {
         //Taking user input string value
         String input = in.nextLine();  //.nextDouble(),.nextInt() for double and integer inputs;
         System.out.println("Hello "+input);
-        System.out.println(in.hasNextLine());//checks whether there is an input if so return true
+        System.out.println(in.hasNextLine());//checks whether there is an input if so return true //use with While loops
         System.out.println("\n\n");
 
     //ARRAYS
